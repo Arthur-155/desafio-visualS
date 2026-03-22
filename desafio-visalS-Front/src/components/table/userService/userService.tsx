@@ -1,6 +1,6 @@
 import type { User } from '../user/User'
 
-const URL = "http://localhost:8081/v1/users"
+const URL = "https://desafio-visuals.onrender.com/v1/users"
 
 //=================================================================
 //                   findAll

@@ -1,0 +1,60 @@
+.containerTable{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+
+.hiddenButton{
+    display: none !important;
+}
+
+.showButton{
+    display: inline;
+}
+
+@media (max-width: 900px) {
+    .containerTable {
+        padding: 20px 12px;
+        gap: 18px;
+    }
+
+    .tableActions {
+        max-width: 100%;
+    }
+
+    .tableWrapper {
+        max-width: 100%;
+    }
+
+    .logoTable {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerTable {
+        padding: 16px 8px;
+        gap: 16px;
+    }
+
+    .tableActions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logoTable {
+        max-width: 170px;
+    }
+
+    .mobileHide {
+        display: none !important;
+    }
+
+    .mobileText {
+        font-size: 0.75rem;
+    }
+}

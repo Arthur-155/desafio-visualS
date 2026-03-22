@@ -1,0 +1,63 @@
+.containerUserInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+
+.infos {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.infoFields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 900px) {
+    .containerUserInfo {
+        padding: 20px 14px;
+        gap: 18px;
+    }
+
+    .infos,
+    .infoFields,
+    .buttons {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerUserInfo {
+        padding: 16px 12px;
+        gap: 16px;
+    }
+
+    .infos,
+    .infoFields,
+    .buttons {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

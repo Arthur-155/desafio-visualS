@@ -49,7 +49,7 @@ export default function UserTable() {
   }, []);
 
   //=================================================================
-  //                         deleteById
+  //          Controle da troca de páginas
 
   const handleChangePage = (
     _event: React.MouseEvent<HTMLButtonElement> | null,
@@ -59,7 +59,7 @@ export default function UserTable() {
   };
 
   //=================================================================
-  //                         deleteById
+  //        controle de quantas linhas o usuário quer
 
   const handleChangeRowsPerPage = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -99,25 +99,27 @@ export default function UserTable() {
   }
 
   //=================================================================
-  //                         deleteById
+  //      Pegando quais linhas vão aparecer na página atual
 
   const paginatedRows = rowsPerPage > 0 ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage) : rows;
 
   //=================================================================
-  //                         deleteById
+  //Calculo de quantas linha vazias faltam pra tabela não encolher na ultima pagina
 
   const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
   //=================================================================
-  //                         deleteById
+  //      Verificando se existe pelo menos uma linha selecionada
 
   const isSelect = rows.some(user => user.selected);
 
   //=================================================================
-  //                         deleteById
+  //   Pegando o primeiro usuário selecionado e retornando o objeto
 
   const selectedUser = rows.find((user) => user.selected);
 
+  //=================================================================
+  //Instanciando navigate, para poder padronizar a navegação dos botões
   const navigate = useNavigate();
 
   return (

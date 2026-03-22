@@ -20,7 +20,9 @@ export default function EditUserInfo() {
     //=================================================================
     //criando a função de navegação
     const navigate = useNavigate();
+    //setando location pra pegar o id do navigate
     const location = useLocation();
+    //instancia de userId pra receber o id que location guardou do navigate
     const userId = location.state?.id as number | undefined;
 
     //=================================================================
@@ -52,7 +54,7 @@ export default function EditUserInfo() {
         city: '',
     });
     //=================================================================
-
+    //Carregando as informações dos usuários quando a tela de edição carrega
     React.useEffect(() => {
         async function loadUser() {
             try {

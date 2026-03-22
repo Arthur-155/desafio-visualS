@@ -36,5 +36,5 @@ Demais resoluções
 
 <img width="1509" height="690" alt="image" src="https://github.com/user-attachments/assets/8f3373a3-a9b4-41b6-b02d-41cfa049891c" />
 
-
+PS: Não ficou desalinhado, é só impressão, confira no link da vercel por conta própria, por favor!
 
